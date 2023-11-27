@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woman - Hablemos del Acoso Universitario</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="js/script.js"></script>
+    <style>
+        body {
+            background-color: #FFB6C1; /* Fondo rosado */
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, Arial, sans-serif; /* Cambiado a Helvetica */
+            background-image: url('acoso12.png'); /* Ruta de la imagen de acoso */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(0.5px); /* Añadido un ligero desenfoque para mejorar nitidez */
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #FF69B4; /* Encabezado con color rosado más intenso */
+        }
+
+        header img.logo_woman {
+            display: block;
+            margin: auto;
+            width: 200px; /* Tamaño aumentado del logo */
+        }
+
+        header h1 {
+            color: white;
+            margin-top: 10px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #FF69B4;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        #inicio,
+        #cuestionario,
+        #galeria,
+        #acerca,
+        #contacto,
+        #noticias,
+        #recursos { /* Cambiado el orden del menú */
+            max-width: 600px;
+            margin: auto;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(147, 112, 219, 0.8); /* Fondo morado con transparencia */
+            animation: fade-in 1s ease-in-out; /* Animación de entrada */
+        }
+
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        #inicio p,
+        #acerca p,
+        #contacto p {
+            text-align: center;
+        }
+
+        .pregunta {
+            margin-bottom: 10px;
+            opacity: 0; /* Inicialmente, las preguntas no son visibles */
+            transform: translateY(-20px);
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        .pregunta.visible {
+            opacity: 1; /* Hace visible la pregunta */
+            transform: translateY(0);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #FF69B4;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contacto {
+            text-align: center;
+            color: white;
+        }
+
+        .social-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-buttons img {
+            width: 40px; /* Ajusta el tamaño según sea necesario */
+            margin: 0 10px;
+        }
+
+        h2 {
+            font-size: 1.5em; /* Tamaño del subtítulo */
+        }
+
+        .noticia img,
+        .imagen img,
+        .animacion img {
+            width: 100%; /* Ajusta el tamaño de las imágenes al 100% del contenedor */
+            height: auto; /* Mantiene la proporción original */
+        }
+
+        .cuadro-woman {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo_woman.png" class="logo_woman" alt="Logo de Woman">
+        <h1>Woman - Hablemos del Acoso Universitario</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#cuestionario">Cuestionario</a>
+        <a href="#galeria">Galería</a>
+        <a href="#acerca">Acerca de Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div id="inicio" class="cuadro-woman">
+        <h2>Bienvenido a Woman</h2>
+        <p>En Woman, nos comprometemos a abordar de manera seria y responsable el problema del acoso universitario. Queremos brindar apoyo a las víctimas, fomentar la concientización y trabajar juntos para construir entornos universitarios seguros y respetuosos.</p>
+    </div>
+
+    <div id="noticias">
+        <h2>Últimas Noticias</h2>
+        <div class="noticia">
+            <h3>Importante Descubrimiento en la Lucha contra el Acoso Universitario</h3>
+            <p>SUNEDU SUPERVISA CORRECTA ATENCIÓN DE UNIVERSIDADES SOBRE DENUNCIAS DE HOSTIGAMIENTO, ACOSO O VIOLENCIA SEXUAL.</p>
+            <img src="hostigamiento.jpg" alt="Noticia 1">
+        </div>
+
+        <div class="noticia">
+            <p>Acoso sexual: Sunedu multa con más de S/220,000 a dos universidades por no atender denuncias contra docentes</p>
+            <img src="hostigamiento2.jpg" alt="Noticia 2">
+        </div>
+
+        <!-- Agrega más noticias según sea necesario -->
+    </div>
+
+    <div id="cuestionario">
+        <h2>Cuestionario sobre Acoso Universitario</h2>
+
+        <div class="pregunta visible">
+            <p>¿Has experimentado acoso o violencia de género en la universidad?</p>
+            <input type="radio" name="pregunta1" value="Si"> Sí
+            <input type="radio" name="pregunta1" value="No"> No
+        </div>
+
+        <div class="pregunta">
+            <p>¿Te sientes seguro en tu entorno universitario?</p>
+            <input type="radio" name="pregunta2" value="Si"> Sí
+            <input type="radio" name="pregunta2" value="No"> No
+        </div>
+
+        <!-- Agrega más preguntas aquí -->
+    </div>
+
+    <div id="galeria">
+        <h2>Galería</h2>
+
+        <div class="imagen">
+            <p>El acoso no es un juego.</p>
+            <img src="acoso2.png" alt="Imagen 1">
+        </div>
+
+        <div class="imagen">
+            <p>No te sientas solo, estamos aquí para ayudarte.</p>
+            <img src="noestassola.jpg" alt="Imagen 2">
+        </div>
+
+        <div class="animacion">
+            <p>Confía en nosotros, estamos para ayudarte.</p>
+            <img src="noestassola2.gif" alt="Animación 1">
+        </div>
+
+        <div class="animacion">
+            <p>Juntos podemos acabar con el acoso.</p>
+            <img src="bastadeacoso.gif" alt="Animación 2">
+        </div>
+
+        <!-- Agrega más imágenes y gifs según sea necesario -->
+    </div>
+
+    <div id="acerca">
+        <h2>Acerca de Nosotros</h2>
+        <p>Somos un grupo de estudiantes de ingeniería de sistemas comprometidos en prevenir y combatir el acoso en nuestros entornos universitarios. Nuestro objetivo es promover un ambiente inclusivo y respetuoso para todos los estudiantes, a través de la educación y el diálogo.</p>
+    </div>
+
+    <div id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>Estamos aquí para ayudarte. Contáctanos a través de:</p>
+        <p>Email: info@woman.com</p>
+        <p>Teléfono: 123-456-7890</p>
+
+        <div class="social-buttons">
+            <img src="facebook_logo.png" alt="Facebook">
+            <img src="whatsapp_logo.png" alt="WhatsApp">
+            <img src="instagram_logo.png" alt="Instagram">
+            <!-- Agrega más botones de redes sociales aquí -->
+        </div>
+        <h2>Formulario de Contacto</h2>
+    <form action="procesar_formulario.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+    </div>
+
+    <footer>
+        <p>&copy; Creemos en un futuro universitario libre de acoso, donde el respeto y la diversidad sean la norma. Únete a nuestra causa y se parte del cambio positivo.</p>
+    </footer>
+</body>
+</html>
